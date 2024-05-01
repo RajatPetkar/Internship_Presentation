@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Usage Report</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="scroll-container">
+        <div class="container">
+            <h1>Bulb Usage Report</h1>
+            <table id="bulb-usage-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Bulb On Time (seconds)</th>
+                        <th>Bulb On Time (minutes)</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Data will be inserted here dynamically -->
+                </tbody>
+            </table>
+            <canvas id="bulb-chart" width="400" height="100"></canvas> <!-- Chart canvas -->
+            <button id="view-graph-btn">View Graph</button> <!-- Button to view graph -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
